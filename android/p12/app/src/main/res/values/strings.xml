@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">p12</string>
+    <string name="add">add</string>
+    <string name="del">del</string>
+    <string name="upd">upd</string>
+    <string name="enter_id">Enter id</string>
+    <string name="name">Name</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="submit">Submit</string>
+</resources>

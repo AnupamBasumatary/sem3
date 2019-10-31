@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">p7</string>
+    <string-array name="choice">
+        <item>select one method</item>
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Contact Us</item>
+    </string-array>
+</resources>

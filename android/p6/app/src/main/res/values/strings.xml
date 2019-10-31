@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">p6</string>
+    <string name="ds">Data Structure</string>
+    <string name="os">Operative System</string>
+    <string name="net">Networking</string>
+    <string name="and">Android</string>
+    <string name="def">Select an option</string>
+</resources>

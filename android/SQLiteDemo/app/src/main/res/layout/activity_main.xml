@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add Data"
+            android:onClick="show"
+            android:id="@+id/ShowAdd"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:onClick="show"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update Data"
+            android:id="@+id/ShowUpdate"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="show"
+            android:text="Delete Data"
+            android:id="@+id/ShowDelete"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:id="@+id/nameField"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/ageField"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="Enter your marks"
+        android:id="@+id/marksField"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:hint="Enter the id of the entry you want to update"
+        android:id="@+id/updateField"
+        android:inputType="number"
+        android:padding="4dp"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adder"
+        android:onClick="add"
+        android:layout_margin="16dp"
+        android:text="ADD Data"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updater"
+        android:onClick="add"
+        android:layout_margin="16dp"
+        android:text="Update Data"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete data"
+        android:onClick="add"
+        android:id="@+id/del"/>
+
+</LinearLayout>

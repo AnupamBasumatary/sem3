@@ -14,7 +14,7 @@ int main(void)
 	char write_msg[BUFFER_SIZE];
 	char read_msg[BUFFER_SIZE];
 	cout<<"Enter a message: ";
-	gets(write_msg);
+	cin>>write_msg;
 	int fd[2];
 	pid_t pid;
 	if(pipe(fd) == -1)

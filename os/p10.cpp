@@ -12,8 +12,12 @@ using namespace std;
               nf=nf+1;//no of free frames
            
          }
-       int  no_of_pages =process_size/page_size;
-           
+        int no_of_pages;
+        if(process_size%page_size==0)
+          no_of_pages = process_size/page_size;
+        else
+          no_of_pages = (process_size/page_size)+1;
+
           if(no_of_pages<=nf)
             {
                  
@@ -118,14 +122,15 @@ using namespace std;
             }
 
 
-         cout<<"PRESS 1 TO ALLOCATE PROCESS \n";
+         
+         
+          do{
+            cout<<"PRESS 1 TO ALLOCATE PROCESS \n";
          cout<<"PRESS 2 TO DEALLOCATE PROCESS \n";
          cout<<"PRESS 3 TO DISPLAY FRAME NO BY PID ONLY \n";
          cout<<"PRESS 4 TO DISPLAY FRAME NO BY PID , PAGE NO \n";
          cout<<"PRESS 5 TO DISPLAY FRAME TABLE \n";
           cout<<"PRESS 6 TO EXIT \n";
-         
-          do{
            cout<<"ENTER YOUR CHOICE \n";
          cin>>choice;
          switch(choice)
@@ -142,13 +147,13 @@ using namespace std;
                       cin>>pid;
                        deallocate(pid);
                        break;
-             case 3: display();
+             case 5: display();
                       break;
-             case 4:cout<<"ENTER THE PID \n";
+             case 3:cout<<"ENTER THE PID \n";
                     cin>>pid;
                        displayFrame(pid);
                          break;
-               case 5:cout<<"ENTER THE PID \n";
+               case 4:cout<<"ENTER THE PID \n";
                     cin>>pid;
                        cout<<"ENTER THE PAGE NO \n";
                          cin>>pn;

@@ -4,7 +4,19 @@
 
 int sum;
 
-void *runner(void *param);
+void *runner(void *param)
+{
+	int i ;
+
+	int upper = atoi((char*) param);
+
+	sum = 0;
+
+	for(i=1; i<=upper;i++)
+		sum += i;
+	pthread_exit(0);
+
+}
 
 int main(int argc , char** argv)
 {
@@ -34,16 +46,4 @@ int main(int argc , char** argv)
 
 }
 
-void *runner(void *param)
-{
-	int i ;
 
-	int upper = atoi((char*) param);
-
-	sum = 0;
-
-	for(i=1; i<=upper;i++)
-		sum += i;
-	pthread_exit(0);
-
-}
